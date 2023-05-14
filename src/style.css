@@ -58,3 +58,16 @@ li {
   font-family: "Cookie", cursive;
   top: -3px;
 }
+
+a {
+  text-decoration: none;
+}
+
+.weather-temperature .active {
+  color: black;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
