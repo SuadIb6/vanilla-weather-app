@@ -1,10 +1,10 @@
 h1 {
   color: black;
   font-family: "Courgette", cursive;
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 100;
   line-height: 28px;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 ul {
@@ -18,13 +18,14 @@ li {
   padding: 0;
   color: black;
   font-family: "Cookie", cursive;
-  font-size: 18px;
+  text-transform: capitalize;
+  font-size: 30px;
   font-weight: 100;
-  line-height: 19px;
+  line-height: 28px;
 }
 .weather-app-wrapper {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 40px auto;
 }
 
 .weather-app {
@@ -46,12 +47,14 @@ li {
 .weather-temperature strong {
   color: black;
   font-size: 64px;
+  font-family: "Cookie", cursive;
   line-height: 1;
   font-weight: 400;
 }
 
 .weather-temperature .units {
   position: relative;
-  font-size: 16px;
+  font-size: 20px;
+  font-family: "Cookie", cursive;
   top: -3px;
 }

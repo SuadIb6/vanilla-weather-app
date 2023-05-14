@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
 </head>
@@ -25,14 +26,12 @@
         <div class="weather-app-wrapper">
             <div class="weather-app">
                 <div class="overview">
-                    <h1>London</h1>
+                    <h1 id="city"></h1>
                     <ul>
                         <li>
                             Sunday 14:30
                         </li>
-                        <li>
-                            Partly cloudy
-                        </li>
+                        <li id="condition"></li>
                     </ul>
                 </div>
                 <div class="row">
@@ -46,13 +45,10 @@
                     <div class="col-6">
                         <ul>
                             <li>
-                                Precipitation: 4%
+                                Humidity:<span id="humidity"></span>%
                             </li>
                             <li>
-                                Humidity: 55%
-                            </li>
-                            <li>
-                                Wind: 3mph
+                                Wind:<span id="wind"></span>mph
                             </li>
                         </ul>
                     </div>
