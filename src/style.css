@@ -1,0 +1,31 @@
+.weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #5585b5;
+  border-radius: 5px;
+}
+h1 {
+  color: black;
+  font-family: "Courgette", cursive;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: "Cookie", cursive;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 19px;
+}
