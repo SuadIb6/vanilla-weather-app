@@ -1,3 +1,60 @@
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/615/original/daytheme2.jpg?1684591536");
+  background-size: cover;
+
+  animation: slidein 100s;
+
+  animation-fill-mode: forwards;
+
+  animation-iteration-count: infinite;
+
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(75, 75, 250, 0.3);
+  border-radius: 3px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
 h1 {
   color: black;
   font-family: "Courgette", cursive;
@@ -28,12 +85,6 @@ li {
   margin: 40px auto;
 }
 
-.weather-app {
-  padding: 20px;
-  border: 1px solid #5585b5;
-  border-radius: 5px;
-}
-
 .overview {
   margin-bottom: 20px;
 }
@@ -55,6 +106,7 @@ li {
 .weather-temperature .units {
   position: relative;
   font-size: 20px;
+  color: black;
   font-family: "Cookie", cursive;
   top: -3px;
 }
@@ -74,12 +126,22 @@ a {
 
 .weather-forecast {
   margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Cookie", cursive;
   text-align: center;
   color: black;
 }
+.col-2 {
+  transition: transform 150ms ease-in-out, filter 200ms ease-in;
+}
+.col-2:hover {
+  filter: contrast(80%);
+  transform: scale(1.1);
+}
 
 .weather-forecast-date {
-  font-size: 16px;
+  font-family: "Cookie", cursive;
+  font-size: 30px;
   opacity: 0.5;
 }
 .weather-forecast-temperature-min {
@@ -87,5 +149,171 @@ a {
 }
 
 .weather-forecast-temperature {
-  font-size: 13px;
+  font-size: 25px;
+}
+small {
+  font-size: 20px;
+  color: black;
+  font-family: "Cookie", cursive;
+}
+
+header {
+  text-align: center;
+  margin: 15px 10px;
+}
+
+#city-input,
+#search {
+  border-radius: 25px;
+  border: 0px solid white;
+  padding: 8px 20px;
+  margin: 14px 5px;
+}
+
+#city-input {
+  width: 100%;
+}
+
+#search {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: rgb(5, 5, 58);
+  transition: all 200ms ease-in-out;
+}
+
+#search:hover {
+  background: linear-gradient(135deg, #5e7496 0%, #c3cfe2 100%);
+  color: white;
+  cursor: pointer;
+}
+
+.theme-button {
+  font-size: 15px;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  color: black;
+  padding: 10px 15px;
+  position: relative;
+  left: 880px;
+  top: 20px;
+  font-weight: bold;
+  border: #5585b5;
+  border-radius: 30px;
+}
+
+.theme-button:hover {
+  color: white;
+  background: #5585b5;
+}
+
+.dark {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/632/original/darktheme3.jpg?1684605196");
+  background-size: cover;
+
+  animation: slidein 100s;
+
+  animation-fill-mode: forwards;
+
+  animation-iteration-count: infinite;
+
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+
+.dark.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(75, 75, 250, 0.3);
+  border-radius: 3px;
+}
+
+.dark .container {
+  background: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+.dark h1 {
+  color: white;
+  font-family: "Courgette", cursive;
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 5px;
+}
+
+.dark li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Cookie", cursive;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 28px;
+}
+
+.dark.weather-app-wrapper {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.dark div {
+  color: white;
+}
+.dark .units {
+  color: white;
+}
+.dark strong {
+  color: white;
+}
+
+.dark a {
+  text-decoration: none;
+}
+
+.dark.weather-temperature .active {
+  color: white;
+  cursor: default;
+}
+
+.dark.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+.dark.weather-forecast {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Cookie", cursive;
+  text-align: center;
+  color: white;
+}
+
+.dark small {
+  color: white;
 }
